@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  padding: 4px;
+}
+
+.container {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 5% 70% 5%;
+  grid-template-rows: 50%;
+  justify-content: center;
+  align-content: center;
+}
+
+.comment-box {
+  /* grid-column: 50%; */
+  background: url("./images/message-square.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
