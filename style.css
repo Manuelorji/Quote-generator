@@ -2,25 +2,64 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: rgb(3, 7, 32);
 }
 
-h3 {
+/* header*/
+h1 {
   text-align: center;
-  padding: 4px;
+  color: #fff;
 }
 
+/* quotes container*/
 .container {
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 5% 70% 5%;
-  grid-template-rows: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-content: center;
+  height: 50vh;
 }
 
-.comment-box {
-  /* grid-column: 50%; */
-  background: url("./images/message-square.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
+.container > button {
+  position: absolute;
+  border: hidden;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-size: 60px;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+button:hover {
+  color: rgb(132, 132, 204);
+}
+
+#quote-box {
+  position: relative;
+  min-height: 300px;
+  width: 70%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.quote {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  top: 25%;
+  text-align: center;
+  background: rgb(3, 7, 32);
+}
+
+.disabled {
+  display: none;
 }
